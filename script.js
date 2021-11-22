@@ -1,4 +1,12 @@
-var css = document.querySelector("h3");
+//The folowing will only work with webpack + ES6
+// import { without } from "lodash";
+// console.log(without);
+
+var _ = require('lodash');
+
+var array =[1,2,3,4,5,6,7,8];
+console.log('answer: ', _.without(array, 3));
+css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
